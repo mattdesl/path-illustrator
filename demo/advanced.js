@@ -164,12 +164,11 @@ function addButtons() {
         icon(buttons[0], 'pencil')
     })
 
-    // events.on(window, 'mousemove', function(ev) {
-    //     if (curState !== states.pointer) {
-    //         var defIcon = ev.altKey ? 'pencil_remove' : 'pencil'
-    //         icon(buttons[0], app.path.pointOnPath 
-    //                 ? 'pencil_add' : defIcon)
-    //     }
-            
-    // })
+    events.on(window, 'mousemove', function(ev) {
+        if (curState !== states.pointer) {
+            var defIcon = ev.altKey ? 'pencil_remove' : 'pencil'
+            icon(buttons[0], app.path.pointOnPath 
+                    ? 'pencil_add' : defIcon)
+        }
+    })
 }

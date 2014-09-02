@@ -4,7 +4,17 @@
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
-a simple client for illustrating vector paths
+Work in progress. A client interface for drawing lines, curves and shapes with familiar Photoshop tools and keybaord shortcuts.
+
+Current features:
+
+- modular, is not tied to a larger application
+- curve adjustment (both controls together, or separately)
+- can move points or full path
+- add / remove points along line
+- undo / redo
+
+The end goals for the project [described here](https://github.com/mattdesl/path-illustrator-client).
 
 ## Usage
 
