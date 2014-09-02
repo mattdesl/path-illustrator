@@ -149,12 +149,13 @@ function addButtons() {
     }
 
     events.on(window, 'keydown', function(ev) {
-        if (ev.metaKey||ev.ctrlKey) {
-            icon(buttons[2], 'pointer_fill')
-        } else
-            icon(buttons[2], 'pointer')
-
-        if (curState !== states.pointer && ev.altKey) { 
+        if (curState === states.pointer) {
+            if (ev.metaKey||ev.ctrlKey) {
+                icon(buttons[2], 'pointer_fill')
+            } else
+                icon(buttons[2], 'pointer')
+        }
+        else if (ev.altKey) { 
             icon(buttons[0], 'pencil_remove')
         }
     })
