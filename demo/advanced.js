@@ -104,7 +104,7 @@ function addButtons() {
             app.path.allowRemove = false
         },
         clear: function(app) {
-            app.path.clear()
+            app.clear()
         },
         undo: function(app) {
             return app.undo()

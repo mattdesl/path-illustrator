@@ -21,6 +21,8 @@ function App(opt) {
 
     this.undo = this.client.undo.bind(this.client)
     this.redo = this.client.redo.bind(this.client)
+    this.clear = this.client.clear.bind(this.client)
+
     this.draw = this.path.draw.bind(this.path)
 }
 
